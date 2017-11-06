@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Image-Barley-Break</title> 
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<meta charset="utf-8"> 
+</head> 
+
+<body> 
+	<div>
+		<h1>Image-Barley-Break</h1>
+	</div>
+	<div id="load" >
+		<button id="l" onclick="loadButton()">Выбрать</button>
+		<div id="status">Файл не выбран</div>
+		<input type="file" id="files" name="files[]" multiple />
+		
+		<div id="drop_zone">
+			Перетащите изображение сюда
+		</div>
+		<div id="settings">
+			Размеры:<br>
+			<input type="number" name="x" id="x" value="4"> x
+			<input type="number" name="y" id="y" value="4"><br>
+			<button id="play" onclick="beginGame()">Играть</button>
+		</div>
+	</div>
+	<button id="original">Оригинал</button>
+	<button id="restart" onclick="restart()">Новая игра</button>
+	<div id="game"></div>
+	<div id="win">
+		Вы победили<br>
+		<button id="restart2" onclick="restart()">Новая игра</button>
+	</div>
+
+	<script type="text/javascript" src="game.js"></script> 
+	<script type="text/javascript" src="jquery.js"></script>
+</body> 
+</html>
